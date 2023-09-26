@@ -1,1 +1,1 @@
-# goit-markup-hw-02
+# Websites created from Figma templates
