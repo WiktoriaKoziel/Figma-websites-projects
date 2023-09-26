@@ -4,6 +4,7 @@
   --header: #4d5ae5;
   --navyblue: #2e2f42;
   --cloud: #f4f4fd;
+  --cornflower: #e7e9fc 
 }
 
 body {
@@ -11,6 +12,18 @@ body {
   color: var(--text);
   background-color: var(--white);
 }
+/*new*/
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  display: block;
+}
+/*new-end*/
+
 /* header section */
 .logo {
   text-transform: uppercase;
@@ -21,6 +34,31 @@ body {
   line-height: 1.17;
   color: var(--header);
 }
+  /*new*/
+
+.top-logo {
+  margin-right: 76px;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.div-head {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+/*new-end*/
 
 .link {
   text-decoration: none;
@@ -40,6 +78,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navyblue);
+  /*new*/
+  padding: 24px 0;
+  /*new-end*/
 }
 
 .nav:hover, .nav:focus, .contact:hover, .contact:focus, .action-btn:focus, .action-btn:hover {
@@ -56,10 +97,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--text);
 }
-/* First Section */
+/* Main Section */
 
 .main {
   background-color: var(--navyblue);
+  /*new*/
+  padding: 188px 0;
+  /*new-end*/
 }
 
 .main-header {
@@ -68,10 +112,13 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  /*new*/
+  max-width: 496px;
+  /*new-end*/
 }
 
 .action-btn {
-  background-color: #4d5ae5;
+  background-color: var(--header);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
@@ -79,8 +126,16 @@ body {
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
+  /*new*/
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  /*new-end*/
 }
-/* Second Section */
+
+/* Values Section */
 
 .header-three {
   font-size: 20px;
@@ -97,7 +152,30 @@ body {
   color: var(--text);
 }
 
-/*Third Section */
+/*new*/
+.our-values {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.values-list {
+  display: flex;
+  gap: 24px;
+}
+
+.value {
+  width: calc((100% - 72px) / 4);
+}
+
+.header-value {
+  margin-bottom: 8px;
+}
+/*new-end*/
+
+/*Job Section */
 
 .header-two {
   font-size: 36px;
@@ -108,31 +186,95 @@ body {
   color: var(--navyblue);
 }
 
-/*Fourth Section */
-.our-team {
-  background-color: #f4f4fd;
+/*new*/
+.our-job {
+  padding-bottom: 120px;
 }
 
-.people-list {
-  background-color: #ffffff;
+.job-header {
+  margin-bottom: 72px;
 }
+
+.our-job-list {
+  display: flex;
+  gap: 24px;
+}
+
+.job {
+  width: calc((100% - 48px) / 3);
+}
+/*new-end*/
+
+/*Team Section */
+.our-team {
+  background-color: #f4f4fd;
+  /*new*/
+  padding: 120px 0;
+  /*new-end*/
+}
+
+.team {
+  background-color: #ffffff;
+  /*new*/
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  /*new-end*/
+}
+
+/*new*/
+.team-header {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.details {
+  padding: 32px 16px;
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.proffession {
+  text-align: center;
+}
+
+/*new-end*/
 
 /*Footer*/
 
 .footer {
   background-color: var(--navyblue);
+  /*new*/
+  padding: 100px 0;
+  /*new-end*/
 }
 .motto {
   line-height: 1.5;
   color: var(--cloud);
   letter-spacing: 0.02em;
+  /*new*/
+  max-width: 264px;
+  /*new-end*/
 }
 
 .studio-footer {
   color: #f4f4fd;
 }
 
-/*portfolio page */
+/*new*/
+.bottom-logo {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+/*new-end*/
+
+/*Portfolio page */
 
 .btn {
   font-family: "Roboto",sans-serif;
@@ -143,9 +285,50 @@ body {
   color: var(--header);
   background-color: var(--cloud);
   cursor: pointer;
+  /*new*/
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+  /*new-end*/
 }
 
 .btn:hover, .btn:focus {
   color: #ffffff;
   background-color: #404bbf;
+  /*new*/
+  border: 1px solid transparent;
+  /*new-end*/
+}
+/*new*/
+
+.portfolio {
+  padding: 96px 0 120px 0;
+}
+
+.filter-list {
+  justify-content: center;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.projects-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.project {
+  width: calc((100% - 48px) / 3);
+}
+
+.about {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none; 
+}
+
+.application {
+  margin-bottom: 8px;
 }
