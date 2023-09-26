@@ -1,10 +1,14 @@
 *:root {
   --text: #434455;
   --white: #ffffff;
-  --header: #4d5ae5;
-  --navyblue: #2e2f42;
-  --cloud: #f4f4fd;
-  --cornflower: #e7e9fc 
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --light: #f4f4fd;
+  --accent: #e7e9fc;
+  --pressed-rate: #404BBF;
+  --success: #31D0AA;
+  --subtle-text: #8E8F99;
+
 }
 
 body {
@@ -32,9 +36,9 @@ img {
   font-weight: 800;
   letter-spacing: 0.03em;
   line-height: 1.17;
-  color: var(--header);
+  color: var(--primary-brand);
 }
-  /*new*/
+/*new*/
 
 .top-logo {
   margin-right: 76px;
@@ -65,7 +69,7 @@ img {
 }
 
 .studio {
-  color: var(--navyblue);
+  color: var(--dark);
 }
 
 .list {
@@ -77,7 +81,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--navyblue);
+  color: var(--dark);
   /*new*/
   padding: 24px 0;
   /*new-end*/
@@ -100,7 +104,7 @@ img {
 /* Main Section */
 
 .main {
-  background-color: var(--navyblue);
+  background-color: var(--dark);
   /*new*/
   padding: 188px 0;
   /*new-end*/
@@ -118,7 +122,7 @@ img {
 }
 
 .action-btn {
-  background-color: var(--header);
+  background-color: var(--primary-brand);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
@@ -134,7 +138,9 @@ img {
   border-radius: 4px;
   /*new-end*/
 }
-
+.main-div {
+  display: block;
+}
 /* Values Section */
 
 .header-three {
@@ -142,7 +148,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--navyblue);
+  color: var(--dark);
 }
 
 .desc {
@@ -183,7 +189,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--navyblue);
+  color: var(--dark);
 }
 
 /*new*/
@@ -249,14 +255,14 @@ img {
 /*Footer*/
 
 .footer {
-  background-color: var(--navyblue);
+  background-color: var(--dark);
   /*new*/
   padding: 100px 0;
   /*new-end*/
 }
 .motto {
   line-height: 1.5;
-  color: var(--cloud);
+  color: var(--light);
   letter-spacing: 0.02em;
   /*new*/
   max-width: 264px;
@@ -282,12 +288,12 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--header);
-  background-color: var(--cloud);
+  color: var(--primary-brand);
+  background-color: var(--light);
   cursor: pointer;
   /*new*/
   padding: 12px 24px;
-  border: 1px solid var(--cornflower);
+  border: 1px solid var(--accent);
   border-radius: 4px;
   /*new-end*/
 }
