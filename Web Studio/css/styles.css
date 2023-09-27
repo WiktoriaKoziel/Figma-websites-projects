@@ -366,7 +366,7 @@ img {
   align-items: baseline;
 }
 .footer-text {
-  gap: 120px;
+  margin-right: 120px;
 }
 
 .footer-social-text {
