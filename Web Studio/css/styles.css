@@ -355,7 +355,6 @@ img {
 .client-icon {
   height: 56px;
   width: 104px;
-  fill: currentColor;
 }
 
 .client-icon:hover, .client-icon:focus {
