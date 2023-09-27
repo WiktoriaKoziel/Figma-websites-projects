@@ -290,6 +290,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  padding-top: 8px;
 }
 
 .social-item {
@@ -319,8 +320,11 @@ img {
   padding: 120px 0;
 }
 
-.cusomers-header {
+.customers-header {
   margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .client-list {
@@ -334,7 +338,7 @@ img {
 }
 
 .client-link {
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--subtle-text);
   height: 100%;
   width: 100%;
   border-radius: 4px;
@@ -349,9 +353,13 @@ img {
 }
 
 .client-icon {
-  height: 56;
-  width: 104;
+  height: 56px;
+  width: 104px;
   fill: currentColor;
+}
+
+.client-icon:hover, .client-icon:focus {
+  fill: var(--pressed-state);
 }
 
 /*Footer*/
@@ -379,8 +387,8 @@ img {
 }
 
 .footer-svg {
-  height: 24;
-  width: 24;
+  height: 24px;
+  width: 24px;
   fill: var(--light);
 }
 
