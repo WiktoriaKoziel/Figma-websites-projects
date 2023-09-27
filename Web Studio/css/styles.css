@@ -51,6 +51,7 @@ img {
 .header {
   border-bottom: 1px solid var(--accent);
   height: 72px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .div-header {
@@ -94,7 +95,7 @@ img {
   padding: 24px 0;
 }
 
-.menu-link:hover, .menu-link:focus, .contact:hover, .contact:focus, .action-btn:focus, .action-btn:hover {
+.menu-link:hover, .menu-link:focus, .contact:hover, .contact:focus, .action-btn:focus, .action-btn:hover, .social-item-link:hover, .social-item-link:focus, .client-link:hover, .client-link:focus {
   color: var(--pressed-state);
 }
 
@@ -114,8 +115,13 @@ img {
 .main {
   background-color: var(--dark);
   padding: 188px 0;
-  width: 1440px;
+  max-width: 1440px;
   height: 600px;
+  display: flex;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-header {
@@ -199,6 +205,23 @@ img {
   margin-bottom: 8px;
 }
 
+/* Values icons */
+
+.value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--light);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.value-svg {
+  width: 64px;
+  height: 64px;
+}
+
 /*Job Section */
 
 .header-two {
@@ -238,6 +261,7 @@ img {
   background-color: var(--white);
   width: calc((100% - 3* 24px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-header {
@@ -262,11 +286,116 @@ img {
   text-align: center;
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-item-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 16px;
+  width: 16px;
+  fill: var(--light);
+}
+
+/* Customers section */
+
+.customers {
+  padding: 120px 0;
+}
+
+.cusomers-header {
+  margin-bottom: 72px;
+}
+
+.client-list {
+  display: flex;
+  gap: 24px;
+}
+
+.client {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.client-link {
+  border: 1px solid #8e8f99;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: var(--subtle-text);
+}
+
+.client-link:focus, .client-link:hover {
+  border-color: var(--pressed-state);
+}
+
+.client-icon {
+  height: 56;
+  width: 104;
+  fill: currentColor;
+}
+
 /*Footer*/
 
 .footer {
   background-color: var(--dark);
   padding: 100px 0;
+}
+
+.footer-div {
+  display: flex;
+  align-items: baseline;
+}
+.footer-text {
+  gap: 120px;
+}
+
+.footer-social-text {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-svg {
+  height: 24;
+  width: 24;
+  fill: var(--light);
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-brand);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover, .social-link:focus {
+  background-color: var(--success);
 }
 
 .motto {
@@ -284,6 +413,12 @@ img {
   margin-bottom: 16px;
   display: inline-block;
 }
+
+.social-list {
+  display: flex;
+  gap: 16px;
+}
+
 
 /*Portfolio page */
 
@@ -305,6 +440,7 @@ img {
   color: var(--white);
   background-color: var(--pressed-state);
   border: 1px solid transparent;
+  box-shadow: 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio {
@@ -337,4 +473,12 @@ img {
 
 .application {
   margin-bottom: 8px;
+}
+
+.project-link {
+  display: block;
+}
+
+.project-link:hover, .project-link:focus {
+  box-shadow: 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
