@@ -122,6 +122,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: auto;
 }
 
 .main-header {
@@ -205,8 +206,6 @@ img {
   margin-bottom: 8px;
 }
 
-/* Values icons */
-
 .value-icon {
   display: flex;
   align-items: center;
@@ -215,11 +214,6 @@ img {
   background-color: var(--light);
   border-radius: 4px;
   margin-bottom: 8px;
-}
-
-.value-svg {
-  width: 64px;
-  height: 64px;
 }
 
 /*Job Section */
@@ -309,8 +303,6 @@ img {
 }
 
 .social-icon {
-  height: 16px;
-  width: 16px;
   fill: var(--light);
 }
 
@@ -352,11 +344,6 @@ img {
   border-color: var(--pressed-state);
 }
 
-.client-icon {
-  height: 56px;
-  width: 104px;
-}
-
 .client-icon:hover, .client-icon:focus {
   fill: var(--pressed-state);
 }
@@ -386,8 +373,6 @@ img {
 }
 
 .footer-svg {
-  height: 24px;
-  width: 24px;
   fill: var(--light);
 }
 
